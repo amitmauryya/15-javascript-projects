@@ -105,6 +105,10 @@ p{
     gap:15px;
  display: flex;
 }
+#invalid{
+    padding-left: 50px;
+    display: none;
+}
 
 
 
