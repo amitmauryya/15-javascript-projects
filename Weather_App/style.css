@@ -23,8 +23,6 @@ body,html{
     width:30%;
     height:75%;
     border-radius: 50px;
-    /* box-shadow: 20px 20px #0a5d5d24 ; */
-    /* scale:1.2 */
 }
 #search{
     padding:20px;
@@ -109,6 +107,7 @@ p{
     padding-left: 50px;
     display: none;
 }
+
 
 
 
