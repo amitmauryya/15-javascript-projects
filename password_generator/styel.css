@@ -1,65 +1,130 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
-html,body{
+
+html, body {
     width: 100%;
     height: 100%;
 }
-#main{
-    height:100%;
-    width:100%;
+
+#main {
+    height: 100%;
+    width: 100%;
 }
 
-#page1{
+#page1 {
     display: flex;
-  align-items: center;
-  justify-content: center;
-    height:100%;
-    width:100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
     background-color: rgb(114, 161, 178);
-    /* padding:20vw; */
-}
-#box{
-   padding:8%;
-    background-color: rgb(64, 118, 118);
-    width:50%;
-    height: 50%;
-    border-radius: 20px;
-    border:2px solid rgb(219, 220, 224);
-    box-shadow: 12px 12px rgb(32, 65, 75);
-}
-#page1 h2{
-    text-transform: capitalize;
-    font-size: 2vw;
-    font-weight: 200;
-}
-input{
-    /* margin-top: 2%; */
-    width:25vw;
-    height: 3vw;
-    font-size: 30px;
-    /* size: 12px; */
-    font-weight: 200;
-    color: rgb(139, 117, 117);
-    /* border-radius: 2px solid white; */
-    /* color: rgba(8, 57, 42, 0.763); */
-}
-#input-box img{
-    /* margin-top: 2%; */
-    position: absolute;
-    margin-top: 0.9vw ;
-    margin-left: -2vw;
-    z-index: 1;
-    width:30px;
-    height: 30px;
+    padding: 20px;
 }
 
-button{
+#box {
+    padding: 30px 20px;
+    background-color: rgb(64, 118, 118);
+    width: 100%;
+    max-width: 500px;   
+    border-radius: 20px;
+    border: 2px solid rgb(219, 220, 224);
+    box-shadow: 8px 8px rgb(32, 65, 75);
+    text-align: center;
+}
+
+#page1 h2 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#input-box input {
+    width: 100%;
+    padding: 12px 45px 12px 15px; 
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(50, 50, 50);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#input-box img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+button {
     display: inline-block;
-    margin-left: 2%;
-    margin-top: 2%;
-    width:20%;
-    height:30% ;
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(32, 65, 75);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(22, 45, 55);
+}
+
+@media (max-width: 600px) {
+    #page1 h2 {
+        font-size: 1.2rem;
+    }
+
+    #input-box input {
+        font-size: 0.9rem;
+        padding: 10px 40px 10px 12px;
+    }
+
+    #input-box img {
+        width: 22px;
+        height: 22px;
+    }
+
+    button {
+        width: 100%;  
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1200px) {
+    #box {
+        padding: 40px;
+    }
+
+    #page1 h2 {
+        font-size: 2rem;
+    }
+
+    #input-box input {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding: 14px 25px;
+    }
 }
